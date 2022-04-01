@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 20px;
+  
+  &-primary {
+    transition: background-color 200ms ease-in;
+    background-color: #ff6d74;
+    padding: 11px 25px;
+    color: #fff;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      background-color: #ee2c35;
+      color: #fff;
+    }
+  }
+}

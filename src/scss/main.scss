@@ -1,0 +1,30 @@
+$slick-font-path: "~slick-carousel/slick/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "~slick-carousel/slick/" !default;
+$slick-arrow-color: black !default;
+
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+@import 'settings/variables';
+
+@import 'elements/container';
+@import 'elements/headings';
+
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/menu';
+@import 'components/menu';
+@import 'components/burger';
+@import 'components/footer';
+@import 'components/copyright';
+
+@import 'components/breadcrumbs';
+@import 'components/page-intro';
+
+@import 'components/block-content';
+@import 'components/skills';
+@import 'components/softwares';
+
+@import 'utilities/helpers';
+@import 'utilities/colors';

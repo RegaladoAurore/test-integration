@@ -1,0 +1,34 @@
+.c-skills {
+  padding-top: 150px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 991px) {
+    .col-12:not(:first-of-type) {
+      margin-top: 110px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 20px;
+    background-color: $white;
+    padding: 110px 71px 70px 30px;
+  }
+
+  &__image {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: $white;
+    padding: 40px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    line-height: 34px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}

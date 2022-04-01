@@ -1,0 +1,27 @@
+.c-page-intro {
+  background: $blue-dark url('../intro-bg.svg') center right 47% no-repeat;
+  padding: 30px 0 120px;
+  color: $white;
+
+  .col {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-weight: 900;
+
+    @media screen and (max-width: 991px) {
+      line-height: 57px;
+      font-size: 45px;
+    }
+
+    @media screen and (min-width: 992px) {
+      line-height: 62px;
+      font-size: 50px;
+    }
+
+    span {
+      color: $blue-light;
+    }
+  }
+}

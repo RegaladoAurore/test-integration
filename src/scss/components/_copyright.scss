@@ -1,0 +1,40 @@
+.c-copyright {
+  @media screen and (max-width: 991px) {
+    padding: 30px 0 14px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  p,
+  a {
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &-list {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:first-of-type)::before {
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
+      content: ' | ';
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

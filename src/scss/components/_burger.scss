@@ -1,0 +1,43 @@
+.c-burger {
+  cursor: pointer;
+
+  &__line {
+    display: block;
+    border-radius: 10px;
+    background-color: $black;
+    width: 20px;
+    height: 2px;
+
+    &:first-of-type {
+      transform-origin: 0 0;
+      transition: transform 400ms ease-in;
+    }
+
+    &:nth-child(2) {
+      transition: transform 200ms ease-in;
+    }
+
+    &:last-of-type {
+      transform-origin: 0 100%;
+      transition: transform 400ms ease-in;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &.is-active .c-burger__line {
+    &:first-of-type {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: scaleY(0);
+      }
+
+    &:last-of-type {
+      transform: rotate(-45deg);
+    }
+  }
+}

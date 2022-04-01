@@ -1,0 +1,92 @@
+.c-footer {
+  color: $white;
+
+  @media screen and (max-width: 991px) {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 87px 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    &-container {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__separator {
+    background-color: $blue-light;
+
+    @media screen and (max-width: 991px) {
+      margin: 30px -15px;
+      width: calc(100% + 30px);
+      height: 1px;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 1px;
+      height: auto;
+    }
+  }
+
+  &-infos,
+  a {
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &-infos {
+    margin-top: 20px;
+
+    strong {
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &-list {
+    margin-bottom: 0;
+  }
+
+  &-list__item {
+    padding: 5px 0 4px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  &-social {
+    margin-bottom: 0;
+
+    &__item {
+      display: inline-block;
+
+      &:not(:first-of-type) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

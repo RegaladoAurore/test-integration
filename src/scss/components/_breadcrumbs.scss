@@ -1,0 +1,30 @@
+.breadcrumb {
+  margin-bottom: 10px;
+
+  &-item {
+    display: inline-block;
+    list-style: none;
+    line-height: 22px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a,
+    &.active {
+      color: $pink;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    + .breadcrumb-item::before {
+      color: $pink;
+      content: '>';
+    }
+  }
+}
