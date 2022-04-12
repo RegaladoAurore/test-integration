@@ -1,35 +1,45 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: 'development',
     devServer: {
         static: path.resolve(__dirname, 'dist'),
     },
-    entry: [
-        __dirname + '/src/index.js',
-        __dirname + '/src/scss/main.scss'
+    devtool: 'cheap-module-source-map',
+    entry: path.resolve(__dirname, './src/index.js'),
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[id].css",
+        }),
     ],
     output: {
-        filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js',
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js)$/,
                 exclude: /node_modules/,
-                use: [],
-            }, {
-                test: /\.s[ac]ss$/,
-                exclude: /node_modules/,
+                use: []
+            },
+            {
+                test: /\.s[ac]ss$/i,
                 use: [
-                    {
-                        loader: 'file-loader',
-                        options: { outputPath: 'css/', name: '[name].css'}
-                    },
-                    'sass-loader', 'postcss-loader'
-                ]
-            }
+                    process.env.NODE_ENV !== 'production'
+                        ? 'style-loader'
+                        : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                    'postcss-loader'
+                ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ]
     }
 };

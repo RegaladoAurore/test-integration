@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b719d1e6-439b-46ff-a934-4882e54e2432" name="Default Changelist" comment="Conf">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +35,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="27giC7gl8PYs2vZvoi7z3cw9HIH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -56,7 +60,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649747999723</updated>
-      <workItem from="1649748002823" duration="2126000" />
+      <workItem from="1649748002823" duration="4233000" />
+      <workItem from="1649752892170" duration="2536000" />
     </task>
     <task id="LOCAL-00001" summary="Conf">
       <created>1649749424919</created>
@@ -65,7 +70,49 @@
       <option name="project" value="LOCAL" />
       <updated>1649749424919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Conf">
+      <created>1649750257767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649750257767</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Conf">
+      <created>1649750325165</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649750325165</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Conf">
+      <created>1649750329634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649750329634</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Conf">
+      <created>1649750818289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649750818289</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Conf">
+      <created>1649753380700</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649753380700</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Conf">
+      <created>1649755158983</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649755158983</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,9 +128,29 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Conf" />
     <option name="LAST_COMMIT_MESSAGE" value="Conf" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2505" height="263" key="GridCell.Tab.0.bottom" timestamp="1649753962409">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state width="2505" height="263" key="GridCell.Tab.0.bottom/0.0.2560.1032@0.0.2560.1032" timestamp="1649753962409" />
+    <state width="2505" height="263" key="GridCell.Tab.0.center" timestamp="1649753962409">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state width="2505" height="263" key="GridCell.Tab.0.center/0.0.2560.1032@0.0.2560.1032" timestamp="1649753962409" />
+    <state width="2505" height="263" key="GridCell.Tab.0.left" timestamp="1649753962409">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state width="2505" height="263" key="GridCell.Tab.0.left/0.0.2560.1032@0.0.2560.1032" timestamp="1649753962409" />
+    <state width="2505" height="263" key="GridCell.Tab.0.right" timestamp="1649753962409">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state width="2505" height="263" key="GridCell.Tab.0.right/0.0.2560.1032@0.0.2560.1032" timestamp="1649753962409" />
   </component>
 </project>
