@@ -5,7 +5,10 @@ module.exports = {
     devServer: {
         static: path.resolve(__dirname, 'dist'),
     },
-    entry: path.resolve(__dirname, './src/index.js'),
+    entry: [
+        __dirname + '/src/index.js',
+        __dirname + '/src/scss/main.scss'
+    ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
@@ -13,14 +16,20 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s[ac]ss$/i,
-                use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader']
-
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
-            },
-        ],
-    },
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [],
+            }, {
+                test: /\.s[ac]ss$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: { outputPath: 'css/', name: '[name].css'}
+                    },
+                    'sass-loader', 'postcss-loader'
+                ]
+            }
+        ]
+    }
 };
